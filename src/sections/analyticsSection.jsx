@@ -12,7 +12,17 @@ import Countup from "react-countup";
 const AnalyticsSection = () => {
   return (
     <div className="analytic-section">
-      <Grid container columnSpacing={2} rowSpacing={1} xs={12}>
+      <Grid
+        container
+        columnSpacing={2}
+        rowSpacing={1}
+        xs={12}
+        sx={{
+          width: {
+            md: " 100%",
+          },
+        }}
+      >
         <Grid item md={6} sm={12}>
           <Stack
             direction="row"
@@ -24,6 +34,11 @@ const AnalyticsSection = () => {
               rowGap: "1rem",
               display: "flex",
               marginBottom: ".5rem",
+
+              width: {
+                xs: "95%",
+                md: "100%",
+              },
               // flexDirection: {
               //   xs: "column",
               //   md: "row",
@@ -68,7 +83,14 @@ const AnalyticsSection = () => {
           <Stack
             direction="row"
             sx={{
-              columnGap: "1rem",
+              columnGap: {
+                md: "1rem",
+                xs: ".5rem",
+              },
+              width: {
+                xs: "95%",
+                md: "100%",
+              },
               rowGap: "1rem",
               display: "flex",
               marginBottom: ".5rem",

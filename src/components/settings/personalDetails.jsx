@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, TextField } from "@mui/material";
 // import { Textarea } from "@mui/joy";
 import Card from "@mui/material/Card";
-import { MenuItem } from "@mui/material";
+import { MenuItem, Typography } from "@mui/material";
 
 const options = [
   {
@@ -24,19 +24,31 @@ const PersonalDetails = () => {
     <Grid
       container
       columnGap={4}
-      rowGap={2}
+      rowGap={3}
       sx={{
-        justifyContent: "center",
+        justifyContent: {
+          md: "center",
+        },
+        width: {
+          xs: "140%",
+          md: "100%",
+        },
       }}
     >
       <Grid item xs={12} md={5}>
         <Card
           sx={{
-            padding: "2rem 1rem ",
+            padding: {
+              xs: ".5rem .5rem 1rem .5rem ",
+              md: "2rem 1rem ",
+            },
           }}
         >
-          <Grid container>
-            <Grid item xs={6}>
+          <Typography variant="h6" gutterBottom component="div">
+            Personal Details
+          </Typography>
+          <Grid container rowSpacing={2}>
+            <Grid item md={6} xs={12}>
               <TextField
                 label="Name"
                 variant="outlined"
@@ -46,17 +58,20 @@ const PersonalDetails = () => {
                 }}
               />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
               <TextField
                 label="Location"
                 variant="outlined"
                 size="medium"
                 sx={{
-                  width: "95%",
+                  width: {
+                    xs: "95%",
+                    md: "95%",
+                  },
                 }}
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid item md={7} xs={12}>
               <TextField
                 label="Bio"
                 variant="outlined"
@@ -67,14 +82,14 @@ const PersonalDetails = () => {
                 }}
               />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
               <TextField
                 label="Category"
                 size="small"
                 required
                 sx={{
                   width: "100%",
-                  marginTop: "4rem",
+                  marginTop: "2rem",
                 }}
                 select
               >
@@ -91,9 +106,70 @@ const PersonalDetails = () => {
       <Grid item xs={12} md={5}>
         <Card
           sx={{
-            padding: "2rem 1rem ",
+            padding: {
+              xs: ".5rem .5rem 1rem .5rem ",
+              md: "2rem 1rem ",
+            },
           }}
-        ></Card>
+        >
+          <Typography variant="h6" gutterBottom component="div">
+            Contact Information
+          </Typography>
+          <Grid container rowSpacing={2}>
+            <Grid item md={6} xs={12}>
+              <TextField
+                label="Contact Phone"
+                variant="outlined"
+                size="medium"
+                sx={{
+                  width: {
+                    xs: "100%",
+                    md: "95%",
+                  },
+                }}
+              />
+            </Grid>
+            <Grid item md={6} xs={12}>
+              <TextField
+                label="Email"
+                variant="outlined"
+                size="medium"
+                sx={{
+                  width: {
+                    xs: "100%",
+                    md: "95%",
+                  },
+                }}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                label="Profile Url"
+                variant="outlined"
+                size="medium"
+                sx={{
+                  width: "95%",
+                  marginTop: "1rem",
+                }}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              {" "}
+              <TextField
+                label="Address"
+                variant="outlined"
+                size="medium"
+                sx={{
+                  width: {
+                    xs: "100%",
+                    md: "95%",
+                  },
+                  marginTop: "1rem",
+                }}
+              />
+            </Grid>
+          </Grid>
+        </Card>
       </Grid>
     </Grid>
   );

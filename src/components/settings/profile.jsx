@@ -10,14 +10,37 @@ import "./profile.css";
 
 const Profile = () => {
   return (
-    <Grid container columnGap={4} rowGap={2}>
+    <Grid
+      container
+      columnGap={4}
+      rowGap={2}
+      sx={{
+        width: {
+          xs: "140%",
+          md: "100%",
+        },
+      }}
+    >
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            padding: "2rem 1rem ",
+            padding: {
+              xs: ".5rem ",
+              md: "2rem 1rem ",
+            },
           }}
         >
-          <Typography gutterBottom variant="h6" component="h6" mar>
+          <Typography
+            gutterBottom
+            variant="h6"
+            component="h6"
+            sx={{
+              fontSize: {
+                xs: "1rem",
+                md: "1.5rem",
+              },
+            }}
+          >
             Syed Moazam Ali
           </Typography>
           <Divider />
@@ -26,14 +49,29 @@ const Profile = () => {
             sx={{
               display: "flex",
               justifyContent: "flex-start",
-              gap: "1rem",
+              gap: {
+                xs: ".5rem",
+                md: "1rem",
+              },
               width: "100%",
               marginTop: "1rem",
-              padding: ".5rem 1rem",
+              padding: {
+                xs: ".4rem",
+                md: ".5rem 1rem",
+              },
             }}
           >
             <EmailIcon />
-            <Typography variant="body" component="div">
+            <Typography
+              variant="body"
+              component="div"
+              sx={{
+                fontSize: {
+                  xs: ".7rem",
+                  md: "1rem",
+                },
+              }}
+            >
               syedmoazamali4321@gmail.com
             </Typography>
           </Stack>
@@ -43,14 +81,29 @@ const Profile = () => {
             sx={{
               display: "flex",
               justifyContent: "flex-start",
-              gap: "1rem",
+              gap: {
+                xs: ".5rem",
+                md: "1rem",
+              },
               width: "100%",
               marginTop: "1rem",
-              padding: ".5rem 1rem",
+              padding: {
+                xs: ".4rem",
+                md: ".5rem 1rem",
+              },
             }}
           >
             <LocationOnIcon />
-            <Typography variant="body" component="div">
+            <Typography
+              variant="body"
+              component="div"
+              sx={{
+                fontSize: {
+                  xs: ".7rem",
+                  md: "1rem",
+                },
+              }}
+            >
               Taxila, Pakistan
             </Typography>
           </Stack>
@@ -59,14 +112,36 @@ const Profile = () => {
       <Grid item xs={12} md={7}>
         <Card
           sx={{
-            padding: " 1rem ",
+            padding: {
+              xs: ".5rem",
+              md: " 1rem ",
+            },
           }}
         >
-          <Typography gutterBottom variant="h6" component="h6">
+          <Typography
+            gutterBottom
+            variant="h6"
+            component="h6"
+            sx={{
+              fontSize: {
+                xs: "1rem",
+                md: "1.5rem",
+              },
+            }}
+          >
             About me
           </Typography>
 
-          <Typography variant="body2" component="p">
+          <Typography
+            variant="body2"
+            component="p"
+            sx={{
+              fontSize: {
+                xs: ".8rem",
+                md: "1rem",
+              },
+            }}
+          >
             Software Engineering Student | Frontend Web Developer
             <br />I am passionate about using technology to make a positive
             impact on society. I specialize in frontend web development, with
@@ -79,7 +154,17 @@ const Profile = () => {
               marginBottom: ".5rem",
             }}
           />
-          <Typography gutterBottom variant="h6" component="h6">
+          <Typography
+            gutterBottom
+            variant="h6"
+            component="h6"
+            sx={{
+              fontSize: {
+                xs: "1rem",
+                md: "1.5rem",
+              },
+            }}
+          >
             Details
           </Typography>
 
@@ -98,13 +183,25 @@ const Profile = () => {
               variant="h6"
               component="h6"
               sx={{
-                fontSize: "1rem",
+                fontSize: {
+                  xs: ".8rem",
+                  md: "1rem",
+                },
                 fontWeight: 600,
               }}
             >
               Full Name:
             </Typography>
-            <Typography variant="body" component="div">
+            <Typography
+              variant="body"
+              component="div"
+              sx={{
+                fontSize: {
+                  xs: ".7rem",
+                  md: ".9rem",
+                },
+              }}
+            >
               Syed Moazam Ali
             </Typography>
           </Stack>
@@ -129,13 +226,25 @@ const Profile = () => {
               variant="h6"
               component="h6"
               sx={{
-                fontSize: "1rem",
+                fontSize: {
+                  xs: ".8rem",
+                  md: "1rem",
+                },
                 fontWeight: 600,
               }}
             >
               Zip Code:
             </Typography>
-            <Typography variant="body" component="div">
+            <Typography
+              variant="body"
+              component="div"
+              sx={{
+                fontSize: {
+                  xs: ".7rem",
+                  md: ".9rem",
+                },
+              }}
+            >
               47080
             </Typography>
           </Stack>
@@ -160,13 +269,25 @@ const Profile = () => {
               variant="h6"
               component="h6"
               sx={{
-                fontSize: "1rem",
+                fontSize: {
+                  xs: ".8rem",
+                  md: "1rem",
+                },
                 fontWeight: 600,
               }}
             >
               url:
             </Typography>
-            <Typography variant="body" component="div">
+            <Typography
+              variant="body"
+              component="div"
+              sx={{
+                fontSize: {
+                  xs: ".7rem",
+                  md: ".9rem",
+                },
+              }}
+            >
               <a href="https://syedmoazamali.netlify.app/" className="link">
                 Portfolio
               </a>

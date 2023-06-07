@@ -48,7 +48,18 @@ export default function List() {
   };
 
   return (
-    <Box sx={{ width: "100%", padding: "1.5rem" }}>
+    <Box
+      sx={{
+        width: {
+          xs: "60vw",
+          md: "100%",
+        },
+        padding: {
+          xs: ".5rem",
+          md: "1.5rem",
+        },
+      }}
+    >
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           value={value}

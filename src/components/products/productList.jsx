@@ -128,8 +128,14 @@ function ProductList() {
         <>
           <Paper
             sx={{
-              width: "90vw",
-              height: "80vh",
+              width: {
+                xs: "80vw",
+                md: "90vw",
+              },
+              height: {
+                xs: "60vh",
+                md: "80vh",
+              },
               overflow: "hidden",
               padding: "12px",
             }}
@@ -172,13 +178,14 @@ function ProductList() {
         <Paper
           sx={{
             maxWidth: {
+              xs: "80vw",
               md: "100%",
             },
             overflow: "hidden",
             padding: "12px",
           }}
         >
-          <TableContainer sx={{ maxHeight: 440, maxWidth: "100%" }}>
+          <TableContainer sx={{ maxHeight: 440 }}>
             <Typography
               gutterBottom
               variant="h5"

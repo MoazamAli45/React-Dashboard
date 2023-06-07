@@ -67,7 +67,7 @@ const Profile = () => {
               component="div"
               sx={{
                 fontSize: {
-                  xs: ".7rem",
+                  xs: ".65rem",
                   md: "1rem",
                 },
               }}

@@ -14,16 +14,16 @@ const AnalyticsSection = () => {
     <div className="analytic-section">
       <Grid
         container
-        columnSpacing={2}
+        columnSpacing={1}
         rowSpacing={1}
-        xs={12}
         sx={{
           width: {
+            xs: "130%",
             md: " 100%",
           },
         }}
       >
-        <Grid item md={6} sm={12}>
+        <Grid item md={6} xs={12}>
           <Stack
             direction="row"
             sx={{
@@ -35,10 +35,7 @@ const AnalyticsSection = () => {
               display: "flex",
               marginBottom: ".5rem",
 
-              width: {
-                xs: "95%",
-                md: "100%",
-              },
+              width: "100%",
               // flexDirection: {
               //   xs: "column",
               //   md: "row",
@@ -87,10 +84,7 @@ const AnalyticsSection = () => {
                 md: "1rem",
                 xs: ".5rem",
               },
-              width: {
-                xs: "95%",
-                md: "100%",
-              },
+              width: "100%",
               rowGap: "1rem",
               display: "flex",
               marginBottom: ".5rem",

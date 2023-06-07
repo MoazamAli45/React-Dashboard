@@ -7,13 +7,7 @@
     rgba(233, 237, 254) 100%
   );
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   flex-wrap: wrap;
   min-height: 90vh;
-}
-@media (max-width: 768px) {
-  .sections {
-    padding: 0.5rem;
-  }
 }

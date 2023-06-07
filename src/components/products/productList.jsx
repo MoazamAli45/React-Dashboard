@@ -170,7 +170,7 @@ function ProductList() {
         <DashboardModal
           open={modalOpen}
           onClose={handleModalClose}
-          edit={true}
+          edit={edit}
           data={editData}
         />
       )}

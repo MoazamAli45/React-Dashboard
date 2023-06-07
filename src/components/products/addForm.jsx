@@ -69,8 +69,12 @@ const AddForm = (props) => {
       category: category,
       date: String(new Date()),
     });
-    getData();
+    setName("");
+    setPrice("");
+    setCategory("");
     props.onClose(true); // now closing modal
+    getData();
+
     Swal.fire("Successfully", "Product Added Successfully", "success");
   };
 

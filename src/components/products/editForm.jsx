@@ -71,8 +71,13 @@ const EditForm = (props) => {
     };
 
     await updateDoc(userDoc, newFields);
+    setName("");
+    setPrice("");
+    setCategory("");
+
     getData();
     props.onClose(true); // now closing modal
+
     Swal.fire("Successfully", "Product Added Successfully", "success");
   };
 
@@ -85,7 +90,7 @@ const EditForm = (props) => {
           textAlign: "center",
         }}
       >
-        Add Products
+        Edit Products
       </Typography>
       <Grid
         container

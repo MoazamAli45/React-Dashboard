@@ -52,7 +52,7 @@ const AnalyticsSection = () => {
                 </Typography>
 
                 <Typography gutterBottom variant="h4" component="h4">
-                  <Countup end={60670} duration={4} delay={0.3} />
+                  <Countup end={9670} duration={4} delay={0.3} />
                 </Typography>
                 <Typography variant="body" component="div">
                   since last 3 months
@@ -69,7 +69,7 @@ const AnalyticsSection = () => {
                 </Typography>
 
                 <Typography gutterBottom variant="h4" component="h4">
-                  <Countup end={24670} duration={4} delay={0.3} />
+                  <Countup end={8760} duration={4} delay={0.3} />
                 </Typography>
                 <Typography variant="body" component="div">
                   since last month
@@ -104,7 +104,7 @@ const AnalyticsSection = () => {
                 </Typography>
 
                 <Typography gutterBottom variant="h4" component="h4">
-                  <Countup end={18670} duration={4} delay={0.3} />
+                  <Countup end={7670} duration={4} delay={0.3} />
                 </Typography>
                 <Typography variant="body" component="div">
                   since last week
